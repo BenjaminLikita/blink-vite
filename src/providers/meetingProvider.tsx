@@ -256,10 +256,7 @@ const MeetingProvider = () => {
   useEffect(() => {
     if(!isLoaded || !user) return
     
-    const peer = new Peer(user.id, {
-      host: 'localhost',
-      port: 3001,
-    })
+    const peer = new Peer(user.id)
     peer.on('open', () => {
       console.log("peer open")
     })
