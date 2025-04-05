@@ -1,14 +1,11 @@
-"use client"
-
-import { useClerk } from "@clerk/nextjs"
-import Image from "next/image"
+import { useUser } from "@clerk/clerk-react"
 
 const DisabledVideoPreview = () => {
-  const { user } = useClerk()
+  const { user } = useUser()
   return (
     <>
       {
-        user && <Image width={100} height={100} className='rounded-full' src={user.imageUrl || '/user'} alt='preview-user' />
+        user && <img width={100} height={100} className='rounded-full' src={user.imageUrl || '/user'} alt='preview-user' />
       }
     </>
   )

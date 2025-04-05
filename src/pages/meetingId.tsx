@@ -1,21 +1,21 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import logo from '@/assets/logo.png'
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'iconsax-react';
 import { Link, useParams } from 'react-router-dom';
 import MeetingSetup from '@/components/meeting/meeting-setup';
 import MeetingRoom from '@/components/meeting/meeting-room';
-import useMeetingContext from '@/hooks/useMeetingContext';
-import { useGetMeetingQuery } from '@/api/queries';
+// import useMeetingContext from '@/hooks/useMeetingContext';
+// import { useGetMeetingQuery } from '@/api/queries';
 
 const MeetingId = () => {
   const { id } = useParams()
   
-  const { getDevices } = useMeetingContext()
+  // const { getDevices } = useMeetingContext()
 
-  useEffect(() => {
-    navigator?.mediaDevices?.addEventListener('devicechange', getDevices)
-  }, [id])
+  // useEffect(() => {
+  //   navigator?.mediaDevices?.addEventListener('devicechange', getDevices)
+  // }, [id])
   
   // const { data: meeting, isLoading: isCallLoading } = useGetMeetingQuery(id as string)
   const meeting = {}

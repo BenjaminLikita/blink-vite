@@ -10,7 +10,7 @@ import { socket } from "@/socket"
 import { useUser } from "@clerk/clerk-react"
 import ParticipantVideo from "./participant-video"
 import MicVideoControls from "./mic_video_controls"
-import { useGetMeetingQuery } from "@/api/queries"
+// import { useGetMeetingQuery } from "@/api/queries"
 
 const MeetingRoom = ({callId}: {callId: string}) => {
   // const { data: meeting } = useGetMeetingQuery(callId)

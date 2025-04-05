@@ -1,7 +1,6 @@
 // import { useCallStateHooks } from '@stream-io/video-react-sdk'
 import useMeetingContext from '@/hooks/useMeetingContext'
 import { Menu, Users } from 'lucide-react'
-import React from 'react'
 
 const MenuParticipantsCount = () => {
   
